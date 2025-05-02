@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { nanoid } from "nanoid";
-import styles from "./ContactForm.module.css";
+import styles from "./contactForm.module.css";
 
 const ContactForm = ({ onAdd }) => {
   const validationSchema = Yup.object({
@@ -12,6 +12,7 @@ const ContactForm = ({ onAdd }) => {
     number: Yup.string()
       .min(3, "Мінімум 3 символи")
       .max(50, "Максимум 50 символів")
+      .matches(/^[0-9]+$/, "Дозволені лише цифри")
       .required("Обов’язкове поле"),
   });
 

@@ -1,6 +1,6 @@
-import styles from "./Contact.module.css";
+import styles from "./contact.module.css";
 
-const Contact = () => {
+const Contact = ({ contact, onDelete }) => {
   return (
     <li className={styles.item}>
       <span>

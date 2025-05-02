@@ -1,6 +1,6 @@
-import styles from "./SearchBox.module.css";
+import styles from "./searchBox.module.css";
 
-const searchBox = ({ value, onChange }) => {
+const SearchBox = ({ value, onChange }) => {
   return (
     <div className={styles.container}>
       <label htmlFor="search"> Find contacts by name</label>

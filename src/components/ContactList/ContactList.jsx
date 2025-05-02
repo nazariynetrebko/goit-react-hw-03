@@ -1,5 +1,5 @@
-import { Contact } from "../Contact/Contact";
-import styles from "./ContactList.module.css";
+import Contact from "../Contact/Contact";
+import styles from "./contactList.module.css";
 
 const ContactList = ({ contacts, onDelete }) => {
   return (

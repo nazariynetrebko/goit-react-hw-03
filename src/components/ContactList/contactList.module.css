@@ -1,0 +1,7 @@
+.list {
+  list-style: none;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+}
